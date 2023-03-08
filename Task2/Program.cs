@@ -6,11 +6,11 @@
 
 Console.WriteLine("Найдем максимальное значение из трех чисел");
 Console.Write("Введите первое число: ");
-int number1 = int.Parse(Console.ReadLine())!;
+int number1 = int.Parse(Console.ReadLine()!);
 Console.Write("Введите второе число: ");
-int number2 = int.Parse(Console.ReadLine())!;
+int number2 = int.Parse(Console.ReadLine()!);
 Console.Write("Введите третье число: ");
-int number3 = int.Parse(Console.ReadLine())!;
+int number3 = int.Parse(Console.ReadLine()!);
 int max = number1;
 
 if (max < number2)
