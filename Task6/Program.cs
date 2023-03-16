@@ -6,15 +6,28 @@
 
 // 32679 -> 6
 
+// Строковый метод
+// Console.WriteLine("Введите число: ");
+// string number = Console.ReadLine()!;
+// if (number.Length > 2)
+// {
+//     Console.WriteLine($"Третья цифра во введенном числе -> {number[2]}");
+// }
+// else
+// {
+//     Console.WriteLine($"Третьей цифры в {number} нет ");
+// }
 
-Console.WriteLine("Введите число: ");
-string number = Console.ReadLine()!;
-if (number.Length >= 3)
+int number = Convert.ToInt32(Console.ReadLine()!);
+if (number > 99)
 {
-    Console.WriteLine($"Третья цифра во введенном числе -> {number[2]}");
+    while (number > 999)
+    {
+        number /=10;
+    }
+    System.Console.WriteLine(number % 10);
 }
-else
+else 
 {
-    Console.WriteLine($"Третьей цифры в {number} нет ");
+    System.Console.WriteLine("Введенно неверное число")
 }
-

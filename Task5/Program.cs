@@ -23,3 +23,6 @@ Console.WriteLine($" Выводим это число -> {num}");
 int result = num % 100;
 int finish = result / 10;
 Console.WriteLine($"Вторая цифра введенного числа -> {finish}");
+
+// Random rand = new Random();                    - верная запись рандома
+// int number = rand.Next(100,1000);
