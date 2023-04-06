@@ -24,7 +24,7 @@ int[] Randomizer (int[] array)
     for (int i =0; i < array.Length; i++)
     {
         array[i] = count;
-        count ++;
+        count +=7/2;
     }
     return array;
 }
